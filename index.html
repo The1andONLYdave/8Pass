@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>8Pass by bilbob74</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>8Pass</h1>
+        <p>KeePass 2.x Client for Windows Phone</p>
+
+        <p class="view"><a href="https://github.com/bilbob74/8Pass">View the Project on GitHub <small>bilbob74/8Pass</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/bilbob74/8Pass/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/bilbob74/8Pass/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/bilbob74/8Pass">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="about-this-app" class="anchor" href="#about-this-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>About this App</h3>
+
+<p>This Version of the App is based on 7Pass, created by Tran Van Ngoc. You could find the original Source at <a href="https://github.com/7Pass/7Pass">https://github.com/7Pass/7Pass</a>. Since there are no Updates to the original version, I have created my own Version, based on his Sourcecode. The primary goal for my new Version was Bugfixing, but in the meantime, I have added some more functionality to the App. </p>
+
+<p>Currently I don't want to create my own App Developer Account for Publishing my Version to the Windows Phone Marketplace. So I have send my Sourcecode to Tran Van Ngoc, in hope, he will release a Update. But in the meantime, anyone with Visual Studio Express for Windows Phone could download my Source and Sideload this Version to the Phone.</p>
+
+<h3>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h3>
+
+<p>You need of course a Windows Phone. At this time, the App works on Windows Phone 8.1 (A Windows Phone 7 Version with nearby the same functionality is <a href="https://github.com/bilbob74/8Pass-WP7">here</a>).</p>
+
+<h4>
+<a id="windows-phone-7" class="anchor" href="#windows-phone-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows Phone 7</h4>
+
+<p>You need Visual Studio Express 2010 for Windows Phone and Zune installed. You could found this in the free <a href="http://dev.windows.com/de-de/develop/download-phone-sdk">Windows Phone 7.1 SDK</a>. Additionaly, you should install the Update to the Windows Phone 7.8 SDK. You could found Zune at <a href="https://www.windowsphone.com/de-DE/How-to/wp7/zune-software">https://www.windowsphone.com/de-DE/How-to/wp7/zune-software</a>. If this is all installed you can Download my Sourcecode. Load the Source in Visual Studio Express 2010 and start a "Build" of the whole Project. You get a XAP Package in the Debug Folder. Now you should Developer unlock your Phone (which is free for up to 5 Devices). Now you can "deploy" the XAP to your Phone. Be sure to Start Zune and connect the Phone to your PC via USB first.</p>
+
+<h4>
+<a id="windows-phone-81" class="anchor" href="#windows-phone-81" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows Phone 8.1</h4>
+
+<p>First you should the Download and install the <a href="http://dev.windows.com/de-de/develop/download-phone-sdk">Windows Phone 8.1 Developer Tools</a> (Visual Studio Express 2013 for Windows). Now Download my Sourcecode for the WP8.1 Version. Load the Project in Visual Studio Express 2013 and start a "Build" of the whole Project. You get a XAP Package in the Debug Folder. After that, Developer unlock your Phone (which is free for up to 5 Devices). Now you can "deploy" the XAP to your Phone after you have connected the Phone via USB to your PC.</p>
+
+<h3>
+<a id="whats-new-to-this-app" class="anchor" href="#whats-new-to-this-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Whats new to this App?</h3>
+
+<h5>
+<a id="bugfixes" class="anchor" href="#bugfixes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bugfixes:</h5>
+
+<ul>
+<li>Fixed Bug, which occurs by Sync a Database to any Cloudstorage resulting in every time having a conflicted copy of the Database</li>
+<li>Fixed Bug, not encoding Password Strings correctly, so that copying this to the Clipboard and pasting it in the Target Window will result in wrong Password. You now a have a dedicated "Copy Password" Button on the Entry Screen.</li>
+<li>Fixed Bug, not setting the correct timestamp after a Sync of every Database</li>
+<li>Fixed Bug for a wrong arranged Contextmenu on the Database Page</li>
+</ul>
+
+<h5>
+<a id="new-features" class="anchor" href="#new-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>New Features:</h5>
+
+<ul>
+<li>Optional AutoSync: Every Time the App is started, it looks now, if the Database in the Cloud is changed. If this is the Case, it gets the new Version. Optionally, AutoSync could be enabled only for WLAN Connections to save Traffic by your Carrier. AutoSync works only by opening the App. If you open the App from a pinned Database, AutoSync is temporarlly disabled</li>
+<li>Optional Notification for Sync: you could get notified after the Sync via Toast and short Vibration</li>
+<li>Optional Search in Password Fields: With this, you could search for a known Password, to check, if you use the same Password in other Entrys to</li>
+<li>Complete Rework of the Layout on such many Places. Since this new App is based on 7Pass, it gets the Base of the old Layout and Design, but really all Screens are now updated and overhauled to gain a easier access to all the old and new functions of the App</li>
+<li>Properties Page for every Database: With this you could not only rename the DB locally, you could also change the Cloud Credentials or the URL (Specially for WebDAV and WebServer Database Types)</li>
+<li>Timestamp of the Actual DB on every Page</li>
+<li>Smaller Contextmenu on DB Page, the Functions are now on a Properties Page.</li>
+<li>Bigger Icons for Groups and Entrys, so it looks more like the official KeePass on Desktop</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/bilbob74">bilbob74</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
