@@ -143,6 +143,9 @@
     <Reference Include="DropNet.WindowsPhone">
       <HintPath>..\Libs\DropNet.WindowsPhone.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib.Portable">
+      <HintPath>..\packages\SharpZipLib.Portable.0.86.0.0002\lib\portable-net45+netcore45+wp8+win8+wpa81+MonoTouch+MonoAndroid\ICSharpCode.SharpZipLib.Portable.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=8.0.1.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -156,9 +159,6 @@
     </Reference>
     <Reference Include="RestSharp.WindowsPhone">
       <HintPath>..\Libs\RestSharp.WindowsPhone.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpZipLib.Silverlight4">
-      <HintPath>..\packages\SharpZipLib.0.86.0\lib\SL4\SharpZipLib.Silverlight4.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -748,7 +748,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="I18n\Strings.no.resx">
       <DependentUpon>Strings.resx</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="I18n\Strings.pl.resx">
       <DependentUpon>Strings.resx</DependentUpon>
     </EmbeddedResource>
